@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="teacher-dashboard">
+        <h1>Teacher Dashboard</h1>
+        
+        <section class="student-management">
+            <h2>Student Account Management</h2>
+            <form id="add-student-form">
+                <input type="text" id="new-username" placeholder="New Username" required>
+                <input type="password" id="new-password" placeholder="New Password" required>
+                <button type="submit">Add Student</button>
+            </form>
+
+            <div id="student-list">
+                <h3>Existing Students</h3>
+                <ul id="students-ul"></ul>
+            </div>
+        </section>
+
+        <section class="video-management">
+            <h2>Video Management</h2>
+            <form id="add-video-form">
+                <input type="text" id="video-title" placeholder="Video Title" required>
+                <input type="text" id="video-link" placeholder="Video Link (YouTube)" required>
+                <button type="submit">Add Video</button>
+            </form>
+
+            <div id="video-list">
+                <h3>Existing Videos</h3>
+                <ul id="videos-ul"></ul>
+            </div>
+        </section>
+
+        <section class="password-management">
+            <h2>Change Teacher Portal Password</h2>
+            <form id="change-password-form">
+                <input type="password" id="current-password" placeholder="Current Password" required>
+                <input type="password" id="new-teacher-password" placeholder="New Password" required>
+                <input type="password" id="confirm-new-password" placeholder="Confirm New Password" required>
+                <button type="submit">Change Password</button>
+            </form>
+        </section>
+
+        <section class="comments-section">
+            <h2>Video Comments</h2>
+            <div id="comments-list"></div>
+        </section>
+
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="teacher-dashboard.js"></script>
+</body>
+</html>

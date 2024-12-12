@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="student-dashboard">
+        <h1>Welcome, <span id="student-name"></span></h1>
+        
+        <div class="video-section">
+            <h2>Available Videos</h2>
+            <div id="video-list" class="video-grid"></div>
+        </div>
+
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="video-player-container">
+                <div id="video-player"></div>
+                <div class="video-controls">
+                    <button id="play-pause-btn">Play/Pause</button>
+                    <button id="next-video-btn">Next Video</button>
+                    <select id="speed-selector">
+                        <option value="0.5">0.5x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-container"></div>
+                <form id="comment-form">
+                    <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="student-dashboard.js"></script>
+</body>
+</html>
